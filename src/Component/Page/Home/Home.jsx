@@ -1,4 +1,8 @@
 import { Link } from "react-router-dom";
+// import { FaFacebookF } from "@react-icons/all-files/fa/FaBeer";
+import { FaFacebookF, FaSkype, FaTwitter } from "react-icons/fa";
+
+
 
 const Home = () => {
     const Navber =
@@ -31,13 +35,10 @@ const Home = () => {
                     </div>
                     <a className="btn btn-ghost text-xl">daisyUI</a>
                 </div>
-                <div className="navbar-center hidden lg:flex">
+                <div className="navbar-end hidden lg:flex">
                     <ul className="menu menu-horizontal px-1">
                         {Navber}
                     </ul>
-                </div>
-                <div className="navbar-end">
-                    <a className="btn">Button</a>
                 </div>
             </div>
             {/* Navber part end */}
@@ -45,6 +46,7 @@ const Home = () => {
             <div className="carousel w-full">
                 <div id="slide1" className="carousel-item relative w-full">
                     <img src="https://daisyui.com/images/stock/photo-1625726411847-8cbb60cc71e6.jpg" className="w-full" />
+
                     <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                         <a href="#slide4" className="btn btn-circle">❮</a>
                         <a href="#slide2" className="btn btn-circle">❯</a>
@@ -73,6 +75,105 @@ const Home = () => {
                 </div>
             </div>
             {/* Add banner CArusall part End */}
+            {/* Add Menu of Week part Stard */}
+            <div className="py-10">
+                <div className="text-center text-3xl text-neutral-300 font-bold py-10">Menu of Week</div>
+                <div className="flex gap-8">
+                    <div className="card card-side bg-slate-200 p-4 shadow-xl ">
+                        <figure><img className="w-fit rounded-lg" src="https://i.ibb.co/2gXxGYW/menu-01.jpg " alt="Movie" /></figure>
+                        <div className="pl-4 w-3/5">
+                            <h2 className="card-title text-black font-bold text-3xl" >Rome Pizza</h2>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis harum dolores dolore quo eaque sunt ea ipsum veniam repudiandae sequi.</p>
+                            <div className="card-actions justify-end">
+                                <div className="text-black font-bold  ">Price: <span className="text-black font-bold text-3xl">$145</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="card card-side bg-slate-200 p-4 shadow-xl">
+                        <figure><img className="w-fit rounded-lg" src="https://i.ibb.co/6Hyp3Bp/menu-02.jpg  " alt="Movie" /></figure>
+                        <div className="pl-4 w-3/5">
+                            <h2 className="card-title text-black font-bold text-3xl" >Summer salad</h2>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis harum dolores dolore quo eaque sunt ea ipsum veniam repudiandae sequi.</p>
+                            <div className="card-actions justify-end">
+                                <div className="text-black font-bold  ">Price: <span className="text-black font-bold text-3xl">$25.99</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div className="flex gap-8 pt-10">
+                    <div className="card card-side bg-slate-200 p-4 shadow-xl">
+                        <figure><img className="w-fit rounded-lg" src="https://i.ibb.co/xg0ffPF/menu-03.jpg" alt="Movie" /></figure>
+                        <div className="pl-4 w-3/5">
+                            <h2 className="card-title text-black font-bold text-3xl" >Fruit salad</h2>
+                            <p>Lorem ipsum, dolor lorem50 sit amet consectetur adipisicing elit. Quis harum dolores dolore quo eaque sunt ea ipsum veniam repudiandae sequi.</p>
+                            <div className="card-actions justify-end">
+                                <div className="text-black font-bold  ">Price:<span className="text-black font-bold text-3xl">$200</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="card card-side bg-slate-200 p-4 shadow-xl">
+                        <figure><img className="w-fit rounded-lg" src="https://i.ibb.co/7tK52Rt/menu-04.jpg" alt="Movie" /></figure>
+                        <div className="pl-4 w-3/5">
+                            <h2 className="card-title text-black font-bold text-3xl" >Espresso</h2>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis harum dolores dolore quo eaque sunt ea ipsum veniam repudiandae sequi.</p>
+                            <div className="card-actions justify-end">
+                                <div className="text-black font-bold  ">Price: <span className="text-black font-bold text-3xl">$3.99</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            {/* Add Menu of Week part End */}
+            {/* Add Our Personal part Stard */}
+
+            <div className="py-10">
+                <div className="text-center text-3xl text-neutral-300 font-bold py-10">Menu of Week</div>
+                <div className="flex gap-8">
+                    <div className="card card-side bg-slate-200 p-4 shadow-xl ">
+                        <figure><img className=" rounded-full" src="https://i.ibb.co/8P7B9kc/personal-01.jpg " alt="Movie" /></figure>
+                        <div className="pl-4 w-3/5">
+                            <h2 className="card-title text-black font-bold text-4xl" >Jamas Ford</h2>
+                            <h1 className="text-orange-600 text-3xl font-bold">Waiter</h1>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae, esse.</p>
+                            <div className="card-actions text-3xl text-blue-500 py-5">
+                                <div><FaFacebookF /></div>
+                                <div><FaSkype /></div>
+                                <div><FaTwitter /></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="card card-side bg-slate-200 p-4 shadow-xl">
+                        <figure><img className=" rounded-full" src="https://i.ibb.co/vvJvXJr/personal-02.jpg " alt="Movie" /></figure>
+                        <div className="pl-4 w-3/5">
+                            <h2 className="card-title text-black font-bold text-4xl" >Matthow Fox</h2>
+                            <h1 className="text-orange-600 text-3xl font-bold">Waiter</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam, veritatis.</p>
+                            <div className="card-actions text-3xl text-blue-500 py-5">
+                                <div><FaFacebookF /></div>
+                                <div><FaSkype /></div>
+                                <div><FaTwitter /></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="card card-side bg-slate-200 p-4 shadow-xl">
+                        <figure><img className=" rounded-full" src="https://i.ibb.co/18x4Zjy/r.jpg " alt="Movie" /></figure>
+                        <div className="pl-4 w-3/5">
+                            <h2 className="card-title text-black font-bold text-4xl" >Tayfur</h2>
+                            <h1 className="text-orange-600 text-3xl font-bold">Joker</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, eaque.</p>
+                            <div className="card-actions text-3xl text-blue-500 py-5">
+                                <div><FaFacebookF /></div>
+                                <div><FaSkype /></div>
+                                <div><FaTwitter /></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            {/* Add Our Personal part End */}
 
 
 
